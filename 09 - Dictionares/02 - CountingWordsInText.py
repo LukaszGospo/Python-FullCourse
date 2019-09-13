@@ -20,4 +20,6 @@ bigcount = None
 for word, count in counts.items():
     if bigcount is None or count > bigcount:
         bigword = word
-        bigcount = coun t
+        bigcount = count
+
+print(sorted([ (v, k) for k,v in counts.items()])[:10])
